@@ -44,7 +44,7 @@ export const HomeTab = (props: PropsT) => {
             paddingInlineStart={isCompactView ? 0 : undefined}
             paddingInlineEnd={isCompactView ? 0 : undefined}
         >
-            <Heading variant="h3" as="h3" marginBottom="10px">
+            <Heading as="h3" marginBottom="10px">
                 Total Earnings: ${earnings.toFixed(2)}
             </Heading>
             <Grid
@@ -84,7 +84,7 @@ export const HomeTab = (props: PropsT) => {
                 </GridItem>
             </Grid>
             <Box marginTop="10px">
-               <Stack direction={isCompactView ? 'column' : 'row'} spacing={5}>
+               <Stack direction={isCompactView ? 'column' : 'row'} gap={5}>
                     <Box
                         w={isCompactView ? '100%' : '50%'}
                         borderRadius="lg"

@@ -197,7 +197,7 @@ export const Main = (props: IMainProps) => {
                             </Box>
                         </Box>
                     ) : (
-                        <Drawer.Root placement="start" isOpen={isOpen} onClose={onClose}>
+                        <Drawer.Root placement="start">
                             <Drawer.Backdrop />
                             <Drawer.Trigger />
                             <Drawer.Positioner>
