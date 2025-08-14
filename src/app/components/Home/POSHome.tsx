@@ -20,7 +20,7 @@ import { ProductList } from '../ProductList';
 import { SmallProductCard } from '../SmallProductCard';
 import { useLocalStorage, useWindowSize } from 'react-use';
 import { DisplayGrid, TotalProductList } from './styled';
-import { SmallCloseIcon } from '@chakra-ui/icons';
+import { RiCloseFill } from "react-icons/ri";
 import { useProductTypes } from '../../../admin/hooks';
 
 type StateT = {
@@ -165,7 +165,7 @@ export const POSHome = () => {
                                     });
                                 }}
                             >
-                                Clear <SmallCloseIcon />
+                                Clear <RiCloseFill />
                             </Button>
                         </>
                     ) : undefined}

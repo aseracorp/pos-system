@@ -10,7 +10,7 @@ import {
     Heading,
     Theme,
 } from '@chakra-ui/react';
-import { HamburgerIcon, LockIcon } from '@chakra-ui/icons';
+import { RxHamburgerMenu, RxLockClosed } from "react-icons/rx";
 import debounce from 'lodash/debounce';
 import { AdminWrapper } from './styled';
 import {
@@ -142,7 +142,7 @@ export const Main = (props: IMainProps) => {
             width="100%"
             onClick={() => window.location.href = '/logout'}
         >
-            <LockIcon /> Logout
+            <RxLockClosed /> Logout
         </Button>
     );
 
@@ -157,7 +157,7 @@ export const Main = (props: IMainProps) => {
                             onClick={onOpen}
                             className="hamburger-menu-btn"
                         >
-                            <HamburgerIcon />
+                            <RxHamburgerMenu />
                         </Button>
                         <Heading as="h1" size="md" paddingTop="5px">
                             POS Admin

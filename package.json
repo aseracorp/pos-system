@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/wisepythagoras/pos-system#readme",
   "dependencies": {
-    "@chakra-ui/icons": "^2.2.4",
     "@chakra-ui/react": "^3.21.0",
     "@emotion/react": "^11.14.0",
     "@observablehq/plot": "^0.6.13",
@@ -49,7 +48,7 @@
     "bun-types": "canary",
     "react-refresh": "0.17.0",
     "react-scripts": "^5.0.1",
-    "typescript": "latest"
+    "typescript": "^5.9.2"
   },
   "browserslist": {
     "production": [

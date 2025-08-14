@@ -8,7 +8,7 @@ import {
     InputGroup,
     VStack,
 } from '@chakra-ui/react';
-import { SearchIcon } from '@chakra-ui/icons';
+import { CiSearch } from "react-icons/ci";
 import { UserT } from '../../types';
 import { StationNavbar } from '../StationNavbar';
 import { useOrdersEventSource } from '../../hooks';
@@ -71,7 +71,7 @@ export const StationHome = (props: PropsT) => {
                 paddingBottom="36px"
             >
                 <Box marginBottom="20px">
-                    <InputGroup startElement={<SearchIcon color="gray.300" />}>
+                    <InputGroup startElement={<CiSearch color="gray.300" />}>
                         <Input placeholder="Order number" onChange={onSearchChange} />
                     </InputGroup>
                 </Box>

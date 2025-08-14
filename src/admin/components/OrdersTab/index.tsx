@@ -13,12 +13,7 @@ import {
     Spinner,
     Table,
 } from '@chakra-ui/react';
-import {
-    ChevronLeftIcon,
-    ChevronRightIcon,
-    DownloadIcon,
-    SearchIcon,
-} from '@chakra-ui/icons';
+import { RxChevronLeft, RxChevronRight, RxDownload } from "react-icons/rx";
 import { DebouncedFunc } from 'lodash';
 import { RichOrder } from '../RichOrder';
 import { EarningsCard } from '../EarningsCard';
@@ -84,7 +79,7 @@ export const OrdersTab = (props: PropsT) => {
                     variant="solid"
                     colorPalette="teal"
                 >
-                    <DownloadIcon />
+                    <RxDownload />
                     <Box paddingTop="4px">
                         Export Sales YTD
                     </Box>
@@ -94,7 +89,7 @@ export const OrdersTab = (props: PropsT) => {
                     variant="solid"
                     colorPalette="teal"
                 >
-                    <DownloadIcon />
+                    <RxDownload />
                     <Box paddingTop="4px">
                         Export Sales Past Day
                     </Box>
@@ -135,7 +130,7 @@ export const OrdersTab = (props: PropsT) => {
                                     disabled={page === 1}
                                     onClick={() => onPageChange(page - 1)}
                                 >
-                                    <ChevronLeftIcon />
+                                    <RxChevronLeft />
                                 </IconButton>
                             </Box>
                             <Box width="100%">
@@ -150,7 +145,7 @@ export const OrdersTab = (props: PropsT) => {
                                     disabled={orders.length < 50}
                                     onClick={() => onPageChange(page + 1)}
                                 >
-                                    <ChevronRightIcon />
+                                    <RxChevronRight />
                                 </IconButton>
                             </Box>
                         </HStack>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Box, Center, CloseButton, Heading, IconButton } from '@chakra-ui/react';
 import { ProductT } from '../../types';
 import { CountPill } from './CountPill';
-import { ChevronDownIcon, ChevronUpIcon, MinusIcon } from '@chakra-ui/icons';
+import { RxChevronDown, RxChevronUp } from "react-icons/rx";
 
 const GridContents = styled.div`
     display: grid;
@@ -77,7 +77,7 @@ export const SmallProductCard = (props: PropsT) => {
                                     onClick={() => onAddProduct(product)}
                                     rounded="full"
                                 >
-                                    <ChevronUpIcon />
+                                    <RxChevronUp />
                                 </IconButton>
                                 <IconButton
                                     variant='ghost'
@@ -85,7 +85,7 @@ export const SmallProductCard = (props: PropsT) => {
                                     onClick={onDecrease}
                                     rounded="full"
                                 >
-                                    <ChevronDownIcon />
+                                    <RxChevronDown />
                                 </IconButton>
                             </Box>
                             <CountPill count={amount} />

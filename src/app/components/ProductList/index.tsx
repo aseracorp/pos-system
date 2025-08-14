@@ -13,7 +13,8 @@ import {
     VStack,
 } from '@chakra-ui/react';
 import { LuSearch } from 'react-icons/lu';
-import { CheckCircleIcon, MinusIcon, Search2Icon, SettingsIcon } from '@chakra-ui/icons';
+import { RxCheckCircled, RxMinus } from "react-icons/rx";
+import { IoIosSettings } from "react-icons/io";
 import { ProductT, ProductTypeT } from '../../types';
 import { ProductCard } from '../ProductCard';
 import { useLocalStorage, useLockBodyScroll } from 'react-use';
@@ -175,7 +176,7 @@ export const ProductList = (props: IProductListProps) => {
                                     />
                                 ) : null}
                                 <Button size="sm" onClick={onOpen}>
-                                    <SettingsIcon /> Printer (<b>{!selectedPrinter ? '-' : selectedPrinter.id}</b>)
+                                    <IoIosSettings /> Printer (<b>{!selectedPrinter ? '-' : selectedPrinter.id}</b>)
                                 </Button>
                             </span>
                         )}
@@ -265,10 +266,10 @@ export const ProductList = (props: IProductListProps) => {
                                             >
                                                 {p.id === selectedPrinter?.id ?
                                                     <List.Indicator color="green.500" verticalAlign="middle">
-                                                        <CheckCircleIcon />
+                                                        <RxCheckCircled />
                                                     </List.Indicator> :
                                                     <List.Indicator color="gray.500" verticalAlign="middle">
-                                                        <MinusIcon />
+                                                        <RxMinus />
                                                     </List.Indicator>
                                                 }
                                                 {p.name}

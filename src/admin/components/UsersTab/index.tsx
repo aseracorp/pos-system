@@ -14,7 +14,7 @@ import {
     Dialog,
 } from '@chakra-ui/react';
 import { useStations, useIsCompactView, useUsers } from '../../hooks';
-import { AddIcon } from '@chakra-ui/icons';
+import { RiAddLargeFill } from "react-icons/ri";
 import { toaster } from '../../../components/ui/toaster';
 
 const stubUserObj = {
@@ -186,7 +186,7 @@ export const UsersTab = (props: PropsT) => {
                         }
                         marginTop="10px"
                     >
-                        <AddIcon /> Create 
+                        <RiAddLargeFill /> Create 
                     </Button>
                 </Field.Root>
             </Box>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Button, Center, Table } from '@chakra-ui/react';
-import { CheckCircleIcon, DeleteIcon } from '@chakra-ui/icons';
+import { RxCheckCircled } from "react-icons/rx";
+import { MdDelete } from "react-icons/md";
 import dayjs from 'dayjs';
 import { OrderProducts } from './OrderProducts';
 import { RichOrderT } from '../../../app/types';
@@ -38,7 +39,7 @@ export const RichOrder = (props: IRichOrderProps) => {
                             variant="solid"
                             size="sm"
                         >
-                            <CheckCircleIcon /> <Box paddingTop="4px">Reactivate</Box>
+                            <RxCheckCircled /> <Box paddingTop="4px">Reactivate</Box>
                         </Button>
                     ) : (
                         <Button
@@ -47,7 +48,7 @@ export const RichOrder = (props: IRichOrderProps) => {
                             variant="solid"
                             size="sm"
                         >
-                            <DeleteIcon /> <Box paddingTop="4px">Cancel</Box>
+                            <MdDelete /> <Box paddingTop="4px">Cancel</Box>
                         </Button>
                     )}
                 </Center>

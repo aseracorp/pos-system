@@ -8,7 +8,7 @@ import { Box,
     Table,
 } from '@chakra-ui/react';
 import { useStations, useIsCompactView, useGetProductsList, useProductTypes } from '../../hooks';
-import { AddIcon } from '@chakra-ui/icons';
+import { RiAddLargeFill } from "react-icons/ri";
 import { StationRow } from './StationRow';
 import { toaster } from '../../../components/ui/toaster';
 
@@ -77,7 +77,7 @@ export const StationsTab = (props: PropsT) => {
                         disabled={!newStationName}
                         marginTop="10px"
                     >
-                        <AddIcon /> Create 
+                        <RiAddLargeFill /> Create 
                     </Button>
                 </Field.Root>
             </Box>

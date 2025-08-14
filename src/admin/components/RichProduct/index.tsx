@@ -9,7 +9,7 @@ import {
     NativeSelect,
     Table,
 } from '@chakra-ui/react';
-import { CheckIcon } from '@chakra-ui/icons';
+import { RxCheck } from "react-icons/rx";
 import { ProductT, ProductTypeOldT, ProductTypeT } from '../../../app/types';
 
 type PropsT = {
@@ -170,7 +170,7 @@ export const RichProduct = (props: PropsT) => {
                     })()}
                     onClick={onSave}
                 >
-                    <CheckIcon /> Save
+                    <RxCheck /> Save
                 </Button>
             </Table.Cell>
         </Table.Row>

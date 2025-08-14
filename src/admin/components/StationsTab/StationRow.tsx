@@ -7,7 +7,7 @@ import {
     Table,
     useDisclosure,
 } from '@chakra-ui/react';
-import { DeleteIcon } from '@chakra-ui/icons';
+import { MdDelete } from "react-icons/md";
 import { ApiResponse, ProductT, ProductTypeT, StationT } from '../../../app/types';
 import { StationProducts } from './StationProducts';
 
@@ -90,7 +90,7 @@ export const StationRow = (props: PropsT) => {
                     size="sm"
                     onClick={onOpen}
                 >
-                    <DeleteIcon /> Delete
+                    <MdDelete /> Delete
                 </Button>
                 <Dialog.Root
                     open={isOpen}

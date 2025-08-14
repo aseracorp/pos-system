@@ -9,7 +9,7 @@ import {
     NativeSelect,
     Table,
 } from '@chakra-ui/react';
-import { AddIcon } from '@chakra-ui/icons';
+import { RiAddLargeFill } from "react-icons/ri";
 
 type ShortProductT = Omit<ProductT, 'id' | 'sold_out' | 'discontinued'>;
 
@@ -99,7 +99,7 @@ export const CreateRichProduct = (props: PropsT) => {
                     // @ts-ignore
                     onClick={handleSubmit(onSubmit)}
                 >
-                    <AddIcon /> Save
+                    <RiAddLargeFill /> Save
                 </Button>
             </Table.Cell>
         </Table.Row>

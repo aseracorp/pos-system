@@ -3,7 +3,7 @@ import { Button, Field, Input, Table } from '@chakra-ui/react';
 import { ProductTypeT } from '../../../app/types';
 import { useForm } from 'react-hook-form';
 import { useProductTypes } from '../../hooks';
-import { AddIcon } from '@chakra-ui/icons';
+import { RiAddLargeFill } from "react-icons/ri";
 
 type ShortProductTypeT = Omit<ProductTypeT, 'id' | 'created_at'>;
 
@@ -82,7 +82,7 @@ export const RichProductTypeCreate = (props: PropsT) => {
                     // @ts-ignore
                     onClick={handleSubmit(onSubmit)}
                 >
-                    <AddIcon /> Save
+                    <RiAddLargeFill /> Save
                 </Button>
             </Table.Cell>
         </Table.Row>
